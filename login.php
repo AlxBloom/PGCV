@@ -1,7 +1,7 @@
 <?php include 'includes/session.php'; ?>
 <?php
   if(isset($_SESSION['user'])){
-    header('location: cart_view.php');
+    header('location: cart_ver.php');
   }
 ?>
 <?php include 'includes/header.php'; ?>
@@ -47,8 +47,8 @@
       		</div>
     	</form>
       <br>
-      <a href="password_forgot.php">Olvidé mi contraseña</a><br>
-      <a href="signup.php" class="text-center">Registrar una nueva membresía</a><br>
+      <a href="password_olvidada.php">Olvidé mi contraseña</a><br>
+      <a href="registrarse.php" class="text-center">Registrar una nueva membresía</a><br>
       <a href="index.php"><i class="fa fa-home"></i> Casa</a>
   	</div>
 </div>

@@ -35,7 +35,7 @@
 
 		if($password != $repassword){
 			$_SESSION['error'] = 'Las contraseñas no coinciden';
-			header('location: signup.php');
+			header('location: registrarse.php');
 		}
 		else{
 			$conn = $pdo->open();
@@ -45,7 +45,7 @@
 			$row = $stmt->fetch();
 			if($row['numrows'] > 0){
 				$_SESSION['error'] = 'Correo electrónico ya tomado';
-				header('location: signup.php');
+				header('location: registrarse.php');
 			}
 			else{
 				$now = date('Y-m-d');
@@ -108,19 +108,19 @@
 				        unset($_SESSION['email']);
 
 				        $_SESSION['success'] = 'Cuenta creada. Revise su correo electrónico para activar.';
-				        header('location: signup.php');
+				        header('location: registrarse.php');
 
 				    } 
 				    catch (Exception $e) {
 				        $_SESSION['error'] = 'El mensaje no pudo ser enviado. Error de correo: '.$mail->ErrorInfo;
-				        header('location: signup.php');
+				        header('location: registrarse.php');
 				    }
 
 
 				}
 				catch(PDOException $e){
 					$_SESSION['error'] = $e->getMessage();
-					header('location: register.php');
+					header('location: registro.php');
 				}
 
 				$pdo->close();
@@ -132,7 +132,7 @@
 	}
 	else{
 		$_SESSION['error'] = 'Rellene el formulario de registro primero';
-		header('location: signup.php');
+		header('location: registrarse.php');
 	}
 
 ?>

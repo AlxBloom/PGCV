@@ -23,7 +23,7 @@
   	<div class="login-box-body">
     	<p class="login-box-msg">Ingrese el correo electrónico asociado con la cuenta</p>
 
-    	<form action="reset.php" method="POST">
+    	<form action="restablecer.php" method="POST">
       		<div class="form-group has-feedback">
         		<input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
         		<span class="glyphicon glyphicon-envelope form-control-feedback"></span>

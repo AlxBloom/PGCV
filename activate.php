@@ -7,7 +7,7 @@
                 <h4><i class="icon fa fa-warning"></i> Error!</h4>
                 Código para activar la cuenta no encontrada.
             </div>
-            <h4>You may <a href="signup.php">Regístrate</a> or back to <a href="index.php">Página principal</a>.</h4>
+            <h4>You may <a href="registrarse.php">Regístrate</a> or back to <a href="index.php">Página principal</a>.</h4>
 		'; 
 	}
 	else{
@@ -57,7 +57,7 @@
 	                <h4><i class="icon fa fa-warning"></i> Error!</h4>
 	                No se puede activar la cuenta. Codigo erroneo.
 	            </div>
-	            <h4>You may <a href="signup.php">Regístrate</a> o de vuelta a <a href="index.php">Página principal</a>.</h4>
+	            <h4>You may <a href="registrarse.php">Regístrate</a> o de vuelta a <a href="index.php">Página principal</a>.</h4>
 			';
 		}
 

@@ -58,12 +58,12 @@
 <script>
 var total = 0;
 $(function(){
-	$(document).on('click', '.cart_delete', function(e){
+	$(document).on('click', '.cart_eliminar', function(e){
 		e.preventDefault();
 		var id = $(this).data('id');
 		$.ajax({
 			type: 'POST',
-			url: 'cart_delete.php',
+			url: 'cart_eliminar.php',
 			data: {id:id},
 			dataType: 'json',
 			success: function(response){
@@ -86,7 +86,7 @@ $(function(){
 		$('#qty_'+id).val(qty);
 		$.ajax({
 			type: 'POST',
-			url: 'cart_update.php',
+			url: 'cart_actualizar.php',
 			data: {
 				id: id,
 				qty: qty,
@@ -110,7 +110,7 @@ $(function(){
 		$('#qty_'+id).val(qty);
 		$.ajax({
 			type: 'POST',
-			url: 'cart_update.php',
+			url: 'cart_actualizar.php',
 			data: {
 				id: id,
 				qty: qty,
@@ -134,7 +134,7 @@ $(function(){
 function getDetails(){
 	$.ajax({
 		type: 'POST',
-		url: 'cart_details.php',
+		url: 'cart_detalles.php',
 		dataType: 'json',
 		success: function(response){
 			$('#tbody').html(response);
@@ -189,7 +189,7 @@ paypal.Button.render({
 
     onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function(payment) {
-			window.location = 'sales.php?pay='+payment.id;
+			window.location = 'ventas.php?pay='+payment.id;
         });
     },
 

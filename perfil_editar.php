@@ -49,6 +49,6 @@
 
 	$pdo->close();
 
-	header('location: profile.php');
+	header('location: perfil.php');
 
 ?>

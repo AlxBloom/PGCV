@@ -26,7 +26,7 @@
 					<p>Su cuenta:</p>
 					<p>Correo electrónico: ".$email."</p>
 					<p>Haga clic en el enlace a continuación para restablecer su contraseña.</p>
-					<a href='http://localhost/ecommerce/password_reset.php?code=".$code."&user=".$row['id']."'>Restablecer la contraseña</a>
+					<a href='http://localhost/ecommerce/password_restablecer.php?code=".$code."&user=".$row['id']."'>Restablecer la contraseña</a>
 				";
 
 				//Load phpmailer
@@ -85,6 +85,6 @@
 		$_SESSION['error'] = 'Ingrese el correo electrónico asociado con la cuenta';
 	}
 
-	header('location: password_forgot.php');
+	header('location: password_olvidada.php');
 
 ?>

@@ -138,7 +138,7 @@ $(function(){
 		var id = $(this).data('id');
 		$.ajax({
 			type: 'POST',
-			url: 'transaction.php',
+			url: 'transaccion.php',
 			data: {id:id},
 			dataType: 'json',
 			success:function(response){

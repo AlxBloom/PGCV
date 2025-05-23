@@ -21,7 +21,7 @@
   	<div class="login-box-body">
     	<p class="login-box-msg">Introduzca nueva contraseña</p>
 
-    	<form action="password_new.php?code=<?php echo $_GET['code']; ?>&user=<?php echo $_GET['user']; ?>" method="POST">
+    	<form action="password_nueva.php?code=<?php echo $_GET['code']; ?>&user=<?php echo $_GET['user']; ?>" method="POST">
       		<div class="form-group has-feedback">
         		<input type="password" class="form-control" name="password" placeholder="Nueva contraseña" required>
         		<span class="glyphicon glyphicon-lock form-control-feedback"></span>

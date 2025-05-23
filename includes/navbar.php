@@ -69,7 +69,7 @@
                 <ul class="menu" id="cart_menu">
                 </ul>
               </li>
-              <li class="footer"><a href="cart_view.php">ir al carrito</a></li>
+              <li class="footer"><a href="cart_ver.php">ir al carrito</a></li>
             </ul>
           </li>
           <?php
@@ -93,10 +93,10 @@
                     </li>
                     <li class="user-footer">
                       <div class="pull-left">
-                        <a href="profile.php" class="btn btn-default btn-flat">Perfil</a>
+                        <a href="perfil.php" class="btn btn-default btn-flat">Perfil</a>
                       </div>
                       <div class="pull-right">
-                        <a href="logout.php" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                        <a href="cerrar_sesion.php" class="btn btn-default btn-flat">Cerrar Sesión</a>
                       </div>
                     </li>
                   </ul>
@@ -106,7 +106,7 @@
             else{
               echo "
                 <li><a href='login.php'>INICIAR SESIÓN</a></li>
-                <li><a href='signup.php'>REGISTRATE</a></li>
+                <li><a href='registrarse.php'>REGISTRATE</a></li>
               ";
             }
           ?>

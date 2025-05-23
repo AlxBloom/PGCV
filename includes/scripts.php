@@ -46,7 +46,7 @@ $(function(){
   	var product = $(this).serialize();
   	$.ajax({
   		type: 'POST',
-  		url: 'cart_add.php',
+  		url: 'cart_agregar.php',
   		data: product,
   		dataType: 'json',
   		success: function(response){
@@ -72,7 +72,7 @@ $(function(){
 function getCart(){
 	$.ajax({
 		type: 'POST',
-		url: 'cart_fetch.php',
+		url: 'cart_obtener.php',
 		dataType: 'json',
 		success: function(response){
 			$('#cart_menu').html(response.list);

@@ -6,7 +6,7 @@
 	    exit(); 
 	}
 
-	$path = 'password_reset.php?code='.$_GET['code'].'&user='.$_GET['user'];
+	$path = 'password_restablecer.php?code='.$_GET['code'].'&user='.$_GET['user'];
 
 	if(isset($_POST['reset'])){
 		$password = $_POST['password'];
